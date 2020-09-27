@@ -18,6 +18,7 @@ public class JudgScript : MonoBehaviour
     void Start()
     {
         playerObject = GameObject.Find("Player");
+        highScore = PlayerPrefs.GetInt("HIGHSCORE", 0);
     }
 
     // Update is called once per frame
@@ -34,6 +35,8 @@ public class JudgScript : MonoBehaviour
             if(score > highScore)
             {
                 highScore = score;
+                PlayerPrefs.SetInt("HIGHSCORE", highScore);
+                PlayerPrefs.Save();
             }
             Debug.Log("wall当たった");
 
