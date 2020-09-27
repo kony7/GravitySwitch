@@ -30,6 +30,13 @@ public class WallCreaterScript : MonoBehaviour
         //wallsArray  = new GameObject[] { wallNormal, wallEnemy, wallSmallEnemy };
         wallPositiondown = new Vector3(wallPositionX,-4.5f,0);
         wallPositionup = new Vector3(wallPositionX, 5.5f, 0);
+
+        wallNormal.tag = "Wall";
+        wallEnemy.tag = "Wall";
+        wallSmallEnemy.tag = "Wall";
+        itemwallEnemy.tag = "Wall";
+        itemwallNormal.tag = "Wall";
+        itemwallSmallEnemy.tag = "Wall";
     }
 
     // Update is called once per frame
