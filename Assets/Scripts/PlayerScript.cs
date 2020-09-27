@@ -17,14 +17,18 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("down"))
-        {
-            Physics.gravity = new Vector3(0, -10, 0);
-        }
+  
+        if (Input.GetMouseButtonDown(0)){
 
-        if (Input.GetKeyDown("up"))
-        {
-            Physics.gravity = new Vector3(0, 10, 0);
+            if (Physics.gravity == new Vector3(0, 10, 0))
+            {
+                Physics.gravity = new Vector3(0, -10, 0);
+            }
+
+            else 
+            {
+                Physics.gravity = new Vector3(0, 10, 0);
+            }
         }
     }
 
