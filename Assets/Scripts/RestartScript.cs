@@ -7,8 +7,8 @@ public class RestartScript : MonoBehaviour
 {
 
     private bool gOvBool;
-    GameObject judgCube;
-    JudgScript judgScript;
+    public GameObject judgCube;
+    public JudgScript judgScript;
 
     // Start is called before the first frame update
     void Start()
