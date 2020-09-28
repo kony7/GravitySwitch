@@ -40,7 +40,7 @@ public class JudgScript : MonoBehaviour
             }
             Debug.Log("wall当たった");
 
-            highScoreText.GetComponent<Text>().text = "HighScore: " + score.ToString();
+            highScoreText.GetComponent<Text>().text = "HighScore: " + highScore.ToString();
 
             playerObject.GetComponent<PlayerScript>().DestroyMe();
 
